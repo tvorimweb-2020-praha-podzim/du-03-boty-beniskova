@@ -33,24 +33,26 @@ body{
     display: flex;
     width: 670px;
     height: 440px;
-    border-radius: 10px; /* nazaoblují se mi rohy proč? :-(*/
+    border-radius: 10px;
     position: relative;
     box-shadow: 2px 2px 9px #949ba1;
-    flex-grow: 1; /*nejde mi nastavit aby položky byly stejně velké*/
 }
 .vizual{
     background-image: linear-gradient(#06d7c1, #50cc49 );
     color: #fff;
     order: -1;
-    width: 1290px; /* zkoušeno*/
+    border-radius: 10px 0 0 10px;
+    flex-basis: 50%;
 }
 .detaily{
     background-color: #fff;
+    border-radius: 0 10px 10px 0;
+    flex-basis: 50%;
 }
 .bota{
     position: absolute;
     right: 335px;
-    bottom: 10px;
+    bottom: 5px;
     
 }
 .slogan{
@@ -67,7 +69,7 @@ body{
     position: absolute;
     text-align: right;
     bottom: 30px;
-    left: 155px; /*dopocitavano*/
+    left: 155px; /right: 30px; mi skočí do detailu/
     padding-right: 30px;
 }
 .cena{
@@ -118,7 +120,7 @@ li{
     color: #f15f42;
     border: 1px solid #f15f42;
     border-radius: 50%;
-    padding: 0;
+    padding: 5px;
 }
 a{
     color: #fff;
@@ -128,7 +130,7 @@ a{
     border-radius: 10px;
     text-transform: uppercase;
 }
-.tlacitko{
+.tlacitko{ 
     position: absolute;
     bottom: 30px;
 }
